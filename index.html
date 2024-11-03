@@ -12,13 +12,47 @@
         <div class="logo">Benjamin Venegas</div>
         <div>
             <ul class="nav-links">
-                <li><a href=#about">Sobre Mí</a></li>
-                <li><a href=#experience">Experiencia</a></li>
-                <li><a href=#projects">Proyectos</a></li>
-                <li><a href=#contact">Contacto</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Benjamin Venegas</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre Mí</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Benjamin Venegas foto perfil" class="picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola, soy</p>
+            <h1>Benjamín Venegas</h1>
+            <p class="section__text__p2">Analista Programador</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Descargar CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Info Contacto</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mi perfil linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/benjamin-venegas-munoz/'" target="_blank" />
+                <img src="./assets/github.png" alt="Mi perfil Github" class="icon" onclick="location.href='https://github.com/Benjaminvenegasmunoz'"/>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
